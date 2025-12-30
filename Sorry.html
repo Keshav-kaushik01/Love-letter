@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>For Jigyasha</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600&family=Great+Vibes&display=swap" rel="stylesheet">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+
+body{
+    font-family:'Dancing Script',cursive;
+    background:linear-gradient(180deg,#0f0f14,#2a2a38);
+    color:#f5f5f5;
+    text-align:center;
+    overflow-x:hidden;
+}
+
+.page{
+    display:none;
+    min-height:100vh;
+    padding:50px 26px;
+}
+
+.active{display:block;}
+
+h1{
+    font-size:2.5em;
+    margin-top:60px;
+    margin-bottom:30px;
+    font-weight:600;
+}
+
+.line{
+    opacity:0;
+    font-size:1.38em;
+    line-height:2.5;
+    letter-spacing:.3px;
+    margin-bottom:14px;
+    animation:fadeIn 1s forwards;
+}
+
+@keyframes fadeIn{
+    from{opacity:0;}
+    to{opacity:1;}
+}
+
+button{
+    margin-top:46px;
+    padding:14px 42px;
+    font-size:18px;
+    border:none;
+    border-radius:30px;
+    cursor:pointer;
+    background:#d16ba5;
+    color:white;
+}
+
+button.whatsapp{
+    background:#25D366;
+    margin-top:30px;
+}
+
+.signature{
+    font-family:'Great Vibes',cursive;
+    font-size:2.8em;
+    margin-top:54px;
+}
+</style>
+</head>
+
+<body>
+
+<audio id="music" loop>
+  <source src="love.mp3" type="audio/mpeg">
+</audio>
+
+<!-- Slide 1 -->
+<div class="page active" id="s1">
+<h1>Jigyasha</h1>
+<p class="line" style="animation-delay:0.5s;">Yeh lafz mere dil ke gehre hisse se hain.</p>
+<p class="line" style="animation-delay:2s;">Kuch aise jo shabdon mein simat nahi paaye.</p>
+<p class="line" style="animation-delay:4s;">Main sirf yeh chahta hoon,<br>tum suno.</p>
+<button onclick="playAndNext('s2')">Play</button>
+</div>
+
+<div class="page" id="s2">
+<h1>Raat Ki Khamoshi</h1>
+<p class="line" style="animation-delay:0.5s;">Raat ke sukoon mein<br>har cheez saaf dikhai deti hai.</p>
+<p class="line" style="animation-delay:2s;">Din ke shor mein adhoora jo tha,</p>
+<p class="line" style="animation-delay:4s;">woh raat ke saaye mein poora lagta hai.</p>
+<button onclick="next('s3')">Next</button>
+</div>
+
+<div class="page" id="s3">
+<h1>Meri Galti</h1>
+<p class="line" style="animation-delay:0.5s;">Main samajhta hoon ki main galat tha.</p>
+<p class="line" style="animation-delay:2s;">Na isliye ki pyaar kam tha,</p>
+<p class="line" style="animation-delay:4s;">balki isliye ki maine pyaar ko dhyaan se jeena nahi seekha.</p>
+<button onclick="next('s4')">Next</button>
+</div>
+
+<div class="page" id="s4">
+<h1>Jo Maine Chhoda</h1>
+<p class="line" style="animation-delay:0.5s;">Maine tumhari baaton ka wazan nahi samjha.</p>
+<p class="line" style="animation-delay:2s;">Tumhari chhoti chhoti feelings ko kabhi nazarandaaz kiya.</p>
+<p class="line" style="animation-delay:4s;">Aur jab tum chup rahi, main samjha ki sab theek hai.</p>
+<button onclick="next('s5')">Next</button>
+</div>
+
+<div class="page" id="s5">
+<h1>Woh Dard</h1>
+<p class="line" style="animation-delay:0.5s;">Ab samajh aata hai ki jo dard tumne mehsoos kiya,</p>
+<p class="line" style="animation-delay:2s;">uska koi raasta nahi tha mujhse door karne ka.</p>
+<p class="line" style="animation-delay:4s;">Main sirf is sachai ko maanta hoon, aur sharminda hoon.</p>
+<button onclick="next('s6')">Next</button>
+</div>
+
+<div class="page" id="s6">
+<h1>Tumhara Asar</h1>
+<p class="line" style="animation-delay:0.5s;">Tum meri zindagi ka hissa nahi, ek roshni ho.</p>
+<p class="line" style="animation-delay:2s;">Jiske bina din adhoore, aur raat khamosh lagti hai.</p>
+<p class="line" style="animation-delay:4s;">Har pal tumhari yaad ek chhoti si aag si jalati hai.</p>
+<button onclick="next('s7')">Next</button>
+</div>
+
+<div class="page" id="s7">
+<h1>Andhera Aur Umeed</h1>
+<p class="line" style="animation-delay:0.5s;">Main pehli baar khud ko dekh pa raha hoon.</p>
+<p class="line" style="animation-delay:2s;">Apni kami, apni galti aur apni mohabbat ke saath.</p>
+<p class="line" style="animation-delay:4s;">Aur is andhere mein ek chhoti si roshni bhi hai — tumhari yaad.</p>
+<button onclick="next('s8')">Next</button>
+</div>
+
+<div class="page" id="s8">
+<h1>Ek Aakhri Sawaal</h1>
+<p class="line" style="animation-delay:0.5s;">Main yeh nahi jaanta ki tum jawab dogi ya nahi.</p>
+<p class="line" style="animation-delay:2s;">Par kya main phir bhi tumhare saath ek nayi shuruaat karne ka chance paa sakta hoon?</p>
+<button onclick="next('s9')">Next</button>
+</div>
+
+<div class="page" id="s9">
+<h1>Aur Agar Nahi</h1>
+<p class="line" style="animation-delay:0.5s;">Aur agar tumhara jawaab nahi hai, toh main use bhi izzat ke saath accept karunga.</p>
+<p class="line" style="animation-delay:2s;">Pyaar sirf paane ka naam nahi, kabhi kabhi chhodne ka bhi naam hai.</p>
+<button onclick="next('s10')">Next</button>
+</div>
+
+<div class="page" id="s10">
+<h1>Bas Itna</h1>
+<p class="line" style="animation-delay:0.5s;">Bas itna kehna tha —</p>
+<p class="line" style="animation-delay:2s;">tum meri zindagi ka sabse gehra aur sachcha hissa ho.</p>
+<p class="line" style="animation-delay:4s;">Chahe tum saath ho ya yaadon mein.</p>
+<button onclick="next('s11')">Next</button>
+</div>
+
+<div class="page" id="s11">
+<h1>Thank You</h1>
+<p class="line" style="animation-delay:0.5s;">Yeh lafz bas ek sach ka izhar hai.</p>
+<p class="line" style="animation-delay:2s;">Jo maine abhi khud se maana hai.</p>
+<p class="line" style="animation-delay:4s;">Har shabd mein sirf sachchai hai,<br>aur ek ummeed ki chhoti si kiran — tumhari khushi.</p>
+
+<p class="signature">— Keshav</p>
+
+<button class="whatsapp" onclick="openWhatsApp()">
+Let's Talk 💬
+</button>
+</div>
+
+<script>
+let started=false;
+
+function playAndNext(nextId){
+  if(!started){
+    started=true;
+    document.getElementById("music").play();
+    document.documentElement.requestFullscreen?.();
+  }
+  document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
+  document.getElementById(nextId).classList.add('active');
+}
+
+function next(id){
+  document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
+  document.getElementById(id).classList.add('active');
+}
+
+function openWhatsApp(){
+  window.location.href = "https://wa.me/918218802382";
+}
+</script>
+
+</body>
+</html>
